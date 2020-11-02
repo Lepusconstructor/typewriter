@@ -7,6 +7,8 @@ for(let char of sentence) {
     process.stdout.write(char);//print char
   }, time += 50)
 }
-process.stdout.write("\n");
+setTimeout(() => {
+  process.stdout.write("\n");
+}, 2000)
 }
 typewriter(sentence);
